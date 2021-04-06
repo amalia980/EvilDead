@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    color: white;
+    background-color: #141414;
+}
+
+.wrapper1 {
+    display: flex;
+    flex-direction: row;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+}
+
+.header-text-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: hidden;
+    background-color: black;
+    display: flex;
+    flex: 1;
+}
+
+.header-text {
+    width: 40rem;
+    
+}
+
+.evil-logo {
+    width: 30rem;
+}
+
+.trailer-text {
+    margin: 0 1rem;
+}
+
+.head-text {
+    font-family: 'IM Fell Double Pica', serif;
+    margin: 0 0 4rem 0;
+}
+
+.trailer {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: white;
+    transition: 1s;
+}
+
+.trailer:hover {
+    color: red;
+    transition: 1s;
+}
+
+.mia-img {
+    width: 60rem;
+    display: flex;
+    flex: 1;
+}
+
+#wrapper2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4rem 0 4rem 0;    
+}
+
+.movie {
+    width: 70rem;
+    top: 0;
+    left: 0;
+    position: relative;
+}
+
+.tint-movie {
+    position: relative;
+}
+
+.tint-movie::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    cursor: pointer;
+  }
+
+.movie:hover {
+    cursor: pointer;
+    transition: 0.5s;
+    display: none;
+}
+
+/*the play button*/
+
+.bi-play-circle-fill {
+    position: absolute;
+    border-style: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.bi-play-circle-fill:hover {
+    cursor: pointer;
+    -webkit-animation: heartBeat 3s;
+    animation: heartBeat 3s;
+    animation-fill-mode: forwards;
+    color: red;
+    transition: 0.3s;
+}
+
+
+/*plot info*/
+
+.wrapper3 {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+.images {
+    width: 15rem;
+    margin: 0 0 1rem 0;
+}
+
+.plot {
+    margin-left: 2rem;
+}
