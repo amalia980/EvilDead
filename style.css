@@ -30,12 +30,12 @@ body {
 }
 
 .header-text {
-    width: 40rem;
+    width: 70%;
     
 }
 
 .evil-logo {
-    width: 30rem;
+    width: 70%;
 }
 
 .trailer-text {
@@ -44,7 +44,8 @@ body {
 
 .head-text {
     font-family: 'IM Fell Double Pica', serif;
-    margin: 0 0 4rem 0;
+    font-weight: lighter;
+    margin: 2rem 0 4rem 0;
 }
 
 .trailer {
@@ -66,7 +67,11 @@ body {
     flex: 1;
 }
 
-#wrapper2 {
+/*the fake video
+
+  */
+
+.wrapper2 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -75,16 +80,15 @@ body {
 
 .movie {
     width: 70rem;
-    top: 0;
-    left: 0;
     position: relative;
 }
 
 .tint-movie {
+    width: 70rem;
     position: relative;
 }
 
-.tint-movie::after {
+.tint-movie:after {
     content: "";
     position: absolute;
     top: 0;
@@ -92,15 +96,17 @@ body {
     right: 0;
     bottom: 0;
     width: 100%;
-    height: 100%;
+    height: 99.3%;
+    display: block;
     background-color: rgba(0,0,0,.5);
     cursor: pointer;
+    transition: 0.5s;
   }
 
-.movie:hover {
+.tint-movie:hover:after {
+    background: none;
     cursor: pointer;
     transition: 0.5s;
-    display: none;
 }
 
 /*the play button*/
@@ -108,29 +114,28 @@ body {
 .bi-play-circle-fill {
     position: absolute;
     border-style: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     transition: 0.3s;
 }
 
 .bi-play-circle-fill:hover {
     cursor: pointer;
-    -webkit-animation: heartBeat 3s;
+
     animation: heartBeat 3s;
     animation-fill-mode: forwards;
     color: red;
     transition: 0.3s;
+
 }
 
 
-/*plot info*/
+/*movie info*/
 
 .wrapper3 {
-    width: 60%;
+    width: 70rem;
     display: flex;
     flex-direction: row;
     margin: 0 auto;
+    margin-bottom: 3rem;
 }
 
 .images {
@@ -140,4 +145,8 @@ body {
 
 .plot {
     margin-left: 2rem;
+}
+
+.movie-info-text {
+    margin-bottom: 1rem;
 }
