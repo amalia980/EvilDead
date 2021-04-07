@@ -43,7 +43,8 @@ body {
 }
 
 .head-text {
-    font-family: 'IM Fell Double Pica', serif;
+    font-family: 'Wire One', sans-serif;
+    /*font-family: 'IM Fell Double Pica', serif;*/
     font-weight: lighter;
     margin: 2rem 0 4rem 0;
 }
@@ -67,9 +68,7 @@ body {
     flex: 1;
 }
 
-/*the fake video
-
-  */
+/*the fake video*/
 
 .wrapper2 {
     display: flex;
