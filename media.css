@@ -1,0 +1,44 @@
+/*laptop 2560*/
+@media only screen and (max-width: 2560px) {
+    .head-text > i {
+        font-size: 4rem;
+    }
+
+    .bi-play-circle {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .trailer-text {
+        font-size: 2.5rem;
+    }
+
+    .wrapper2 {
+        width: 100rem;
+        height: 70rem;
+        margin: auto;
+    }
+
+}
+
+/*laptop width 1024px*/
+@media only screen and (max-width: 1024px) {
+    .wrapper1 {
+        width: 100%;
+    }
+    
+    .wrapper1 > .mia-img {
+        width: 8rem;
+    }
+
+    .header-text-wrap {
+        width: auto;
+    }
+}
+
+/*ipad 768 x 1024*/
+@media only screen and (max-width: 768px) {
+    .wrapper1 > .mia-img {
+        display: none;
+    }
+}

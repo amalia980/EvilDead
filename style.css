@@ -1,3 +1,5 @@
+@import url("media.css");
+
 * {
     padding: 0;
     margin: 0;
@@ -17,6 +19,7 @@ body {
     border-color: black;
     border-width: 5px;
     margin-bottom: 3rem;
+    width: 100%;
 }
 
 .header-text-wrap {
@@ -48,6 +51,7 @@ body {
     /*font-family: 'IM Fell Double Pica', serif;*/
     font-weight: lighter;
     margin: 2rem 0 4rem 0;
+    font-size: 3rem;
 }
 
 .trailer {
@@ -165,10 +169,12 @@ body {
 .bi-facebook, .bi-instagram, .bi-twitter {
     margin: 0 1rem 0.5rem 1rem;
     color: darkgray;
+    transition: 0.5s;
 }
 
 .bi-facebook:hover, .bi-instagram:hover, .bi-twitter:hover {
     color: yellow;
+    transition: 0.5s;;
 }
 
 .copyright {
